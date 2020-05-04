@@ -27,6 +27,7 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 
+	//Finding all the Students
 	@GetMapping("/findAll")
 	public List<Student> findAll() {
 		return studentService.findAll();
